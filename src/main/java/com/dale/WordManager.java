@@ -4,6 +4,11 @@ import java.util.Scanner;
 
 public class WordManager {
     Scanner scanner = new Scanner(System.in);
+    WordCRUD wordCRUD;
+
+    public WordManager() {
+        wordCRUD = new WordCRUD(scanner);
+    }
 
     public void manage() {
         while (true) {
@@ -11,6 +16,7 @@ public class WordManager {
             if (menu == 0) break;
             if (menu == 4) {
                 //create
+                wordCRUD.addWord();
             } else if (menu == 1) {
                 //Read
             }

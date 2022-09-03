@@ -1,10 +1,33 @@
 package com.dale;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class WordCRUD implements ICRUD {
+    ArrayList<WordModel> list;
+    Scanner scanner;
+
+    public WordCRUD(Scanner scanner) {
+        list = new ArrayList<>();
+        this.scanner = scanner;
+    }
 
     @Override
     public Object add() {
-        return null;
+        System.out.print("=> 난이도(1,2,3) & 새 단어 입력 : ");
+        int level = scanner.nextInt();
+        String word = scanner.next();
+
+        System.out.print("뜻 입력 : ");
+        String meaning = scanner.next();
+        // typed by user
+        return new WordModel(0, level, word, meaning);
+    }
+
+    public void addWord(){
+        WordModel wordModel = (WordModel) add();
+        list.add(wordModel);
+        System.out.println("새 단어가 단어장에 추가되었습니다 !!!");
     }
 
     @Override
