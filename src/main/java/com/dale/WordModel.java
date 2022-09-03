@@ -1,14 +1,25 @@
 package com.dale;
 
 public class WordModel {
+    private int number;
     private int level;
+
     private String word;
     private String meaning;
 
-    public WordModel(int level, String word, String meaning) {
+    public WordModel(int number, int level, String word, String meaning) {
+        this.number = number;
         this.level = level;
         this.word = word;
         this.meaning = meaning;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public void setNumber(int number) {
+        this.number = number;
     }
 
     public int getLevel() {
