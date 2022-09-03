@@ -5,11 +5,21 @@ import java.util.Scanner;
 public class WordManager {
     Scanner scanner = new Scanner(System.in);
 
-    public void manage(){
-        selectMenu();
+    public void manage() {
+        while (true) {
+            int menu = selectMenu();
+            if (menu == 0) break;
+            if (menu == 4) {
+                //create
+            } else if (menu == 1) {
+                //Read
+            }
+        }
+
+
     }
 
-    public void selectMenu(){
+    public int selectMenu() {
         System.out.print("*** 영단어 마스터 ***\n" +
                 "********************\n" +
                 "1. 모든 단어 보기\n" +
@@ -22,5 +32,6 @@ public class WordManager {
                 "0. 나가기\n" +
                 "********************\n" +
                 "=> 원하는 메뉴는? ");
+        return scanner.nextInt();
     }
 }
