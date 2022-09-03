@@ -14,6 +14,17 @@ public class WordModel {
         this.meaning = meaning;
     }
 
+    @Override
+    public String toString() {
+        String slevel = "";
+        for (int i = 0; i < level; i++) slevel += "*";
+        String coment = String.format("%-3s", slevel) + String.format("%15s", word) +
+                "  " + meaning;
+
+
+        return coment;
+    }
+
     public int getNumber() {
         return number;
     }

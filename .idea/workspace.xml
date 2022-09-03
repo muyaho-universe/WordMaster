@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Update manage method">
+    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Update Create part">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordCRUD.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +54,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1662184846135</updated>
-      <workItem from="1662184847765" duration="4217000" />
+      <workItem from="1662184847765" duration="5225000" />
     </task>
     <task id="LOCAL-00001" summary="Do the initial commit">
       <created>1662184878139</created>
@@ -119,7 +119,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662189479055</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update insert part">
+      <created>1662191222868</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1662191222869</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Update Create part">
+      <created>1662191389802</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1662191389802</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +163,8 @@
     <MESSAGE value="Update WordManager" />
     <MESSAGE value="Change the return type of selectMenu" />
     <MESSAGE value="Update manage method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update manage method" />
+    <MESSAGE value="Update insert part" />
+    <MESSAGE value="Update Create part" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Create part" />
   </component>
 </project>

@@ -16,10 +16,10 @@ public class WordCRUD implements ICRUD {
     public Object add() {
         System.out.print("=> 난이도(1,2,3) & 새 단어 입력 : ");
         int level = scanner.nextInt();
-        String word = scanner.next();
+        String word = scanner.nextLine();
 
         System.out.print("뜻 입력 : ");
-        String meaning = scanner.next();
+        String meaning = scanner.nextLine();
         // typed by user
         return new WordModel(0, level, word, meaning);
     }
@@ -43,5 +43,14 @@ public class WordCRUD implements ICRUD {
     @Override
     public void select(Object obj) {
 
+    }
+
+    public void listAll(){
+        System.out.println("--------------------------------");
+        for (int i = 0; i < list.size(); i++){
+            System.out.print((i+1) + " ");
+            System.out.println(list.get(i).toString());
+        }
+        System.out.println("--------------------------------");
     }
 }
