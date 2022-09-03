@@ -1,11 +1,11 @@
 package com.dale;
 
 public interface ICRUD {
-    public int add();
+    public Object add();
 
-    public int update();
+    public int update(Object obj);
 
-    public int delete();
+    public int delete(Object obj);
 
-    public void select(Object o);
+    public void select(Object obj);
 }
