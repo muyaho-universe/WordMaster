@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Update Create part">
+    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Update printing format to fit the report">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +40,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,6 +56,7 @@
       <option name="presentableId" value="Default" />
       <updated>1662184846135</updated>
       <workItem from="1662184847765" duration="5225000" />
+      <workItem from="1662275137986" duration="911000" />
     </task>
     <task id="LOCAL-00001" summary="Do the initial commit">
       <created>1662184878139</created>
@@ -133,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662191389802</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Update printing format to fit the report">
+      <created>1662276162838</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1662276162838</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +174,7 @@
     <MESSAGE value="Update manage method" />
     <MESSAGE value="Update insert part" />
     <MESSAGE value="Update Create part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update Create part" />
+    <MESSAGE value="Update printing format to fit the report" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update printing format to fit the report" />
   </component>
 </project>
