@@ -21,6 +21,12 @@ public class WordManager {
             } else if (menu == 1) {
                 //Read
                 wordCRUD.listAll();
+            } else if (menu == 5) {
+                //Update
+                wordCRUD.listAll();
+            } else if (menu == 6) {
+                //Delete
+                wordCRUD.listAll();
             }
         }
 
