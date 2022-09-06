@@ -23,7 +23,7 @@ public class WordManager {
                 wordCRUD.listAll();
             } else if (menu == 5) {
                 //Update
-                wordCRUD.listAll();
+                wordCRUD.wordUpdate();
             } else if (menu == 6) {
                 //Delete
                 wordCRUD.listAll();

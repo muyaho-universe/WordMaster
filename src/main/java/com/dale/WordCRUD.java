@@ -53,4 +53,21 @@ public class WordCRUD implements ICRUD {
         }
         System.out.println("--------------------------------");
     }
+
+    private ArrayList<Integer> listInSelection(String keyword){
+        ArrayList<Integer> idList = new ArrayList<>();
+        System.out.println("--------------------------------");
+        for (int i = 0; i < list.size(); i++){
+            System.out.print((i+1) + " ");
+            System.out.println(list.get(i).toString());
+        }
+        System.out.println("--------------------------------");
+        return null;
+    }
+
+    public void wordUpdate() {
+        System.out.print("=> 수정할 단어 검색 : ");
+        String keyword = scanner.next();
+        listInSelection(keyword);
+    }
 }
