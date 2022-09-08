@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Complete all">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordCRUD.java" afterDir="false" />
+    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Update delete function">
+      <change afterPath="$PROJECT_DIR$/Dictionary.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662650415511</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Update delete function">
+      <created>1662651902696</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1662651902696</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +222,7 @@
     <MESSAGE value="Update select menu" />
     <MESSAGE value="Complete delete" />
     <MESSAGE value="Complete all" />
-    <option name="LAST_COMMIT_MESSAGE" value="Complete all" />
+    <MESSAGE value="Update delete function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update delete function" />
   </component>
 </project>
