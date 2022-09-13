@@ -11,6 +11,7 @@ public class WordManager {
     }
 
     public void manage() {
+        wordCRUD.loadFile();
         System.out.println("*** 영단어 마스터 ***");
         while (true) {
             int menu = selectMenu();
@@ -21,16 +22,23 @@ public class WordManager {
             } else if (menu == 1) {
                 //Read
                 wordCRUD.listAll();
+            } else if (menu == 2) {
+                //Read by level
+                wordCRUD.listAll();
+            } else if (menu == 3) {
+                //Search
+                wordCRUD.search();
             } else if (menu == 5) {
-                //Read
+                //Update
                 wordCRUD.updateItem();
             } else if (menu == 6) {
-                //Read
+                //Delete
                 wordCRUD.deleteItem();
+            } else if (menu == 7) {
+                //Save
+                wordCRUD.saveFile();
             }
         }
-
-
     }
 
     public int selectMenu() {

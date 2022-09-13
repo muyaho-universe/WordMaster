@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Create Dictionary.txt">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Update delete function">
+      <change afterPath="$PROJECT_DIR$/Dictionary.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +58,6 @@
       <workItem from="1662184847765" duration="5225000" />
       <workItem from="1662275137986" duration="1678000" />
       <workItem from="1662434437294" duration="583000" />
-      <workItem from="1663053777783" duration="392000" />
     </task>
     <task id="LOCAL-00001" summary="Do the initial commit">
       <created>1662184878139</created>
@@ -186,14 +185,7 @@
       <option name="project" value="LOCAL" />
       <updated>1662651902696</updated>
     </task>
-    <task id="LOCAL-00019" summary="Create Dictionary.txt">
-      <created>1662652713624</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1662652713624</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +223,6 @@
     <MESSAGE value="Complete delete" />
     <MESSAGE value="Complete all" />
     <MESSAGE value="Update delete function" />
-    <MESSAGE value="Create Dictionary.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create Dictionary.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update delete function" />
   </component>
 </project>

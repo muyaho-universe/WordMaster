@@ -1,11 +1,17 @@
 package com.dale;
 
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WordCRUD implements ICRUD {
     ArrayList<WordModel> list;
     Scanner scanner;
+
+    final private String FILENAME = "Dictionary.txt";
 
     public WordCRUD(Scanner scanner) {
         list = new ArrayList<>();
@@ -107,5 +113,51 @@ public class WordCRUD implements ICRUD {
         }
 
 
+    }
+
+    public void search() {
+        System.out.print("=> 검색할 단어 검색 : ");
+        String keyword = scanner.next();
+        ArrayList<Integer> idList = this.listAll(keyword);
+        int j = 0;
+
+        System.out.println("--------------------------------");
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getWord().contains(keyword)) {
+                j++;
+                System.out.print((j) + " ");
+                System.out.println(list.get(i).toString());
+                idList.add(i);
+            }
+        }
+        System.out.println("--------------------------------");
+    }
+
+    public void loadFile() {
+        try {
+            BufferedReader bufferedReader = new BufferedReader(new FileReader(FILENAME));
+            String line;
+            int count = 0;
+
+            while (true){
+                line = bufferedReader.readLine();
+                if(line == null) break;
+                String[] data = line.split("\\|");
+
+                int level = Integer.parseInt(data[0]);
+                String word = data[1];
+                String meaning = data[2];
+                WordModel wordModel = new WordModel(0, level, word, meaning);
+                list.add(wordModel);
+                count++;
+            }
+            bufferedReader.close();
+            System.out.println("==> " + count + "개 로딩 완료!!!");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void saveFile() {
     }
 }
