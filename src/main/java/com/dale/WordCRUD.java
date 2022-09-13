@@ -125,7 +125,7 @@ public class WordCRUD implements ICRUD {
     public void search() {
         System.out.print("=> 검색할 단어 검색 : ");
         String keyword = scanner.next();
-        ArrayList<Integer> idList = this.listAll(keyword);
+
         int j = 0;
 
         System.out.println("--------------------------------");
@@ -134,10 +134,11 @@ public class WordCRUD implements ICRUD {
                 j++;
                 System.out.print((j) + " ");
                 System.out.println(list.get(i).toString());
-                idList.add(i);
+
             }
         }
         System.out.println("--------------------------------");
+
     }
 
     public void loadFile() {
