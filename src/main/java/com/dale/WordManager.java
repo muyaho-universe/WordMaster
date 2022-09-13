@@ -24,7 +24,7 @@ public class WordManager {
                 wordCRUD.listAll();
             } else if (menu == 2) {
                 //Read by level
-                wordCRUD.listAll();
+                wordCRUD.searchByLevel();
             } else if (menu == 3) {
                 //Search
                 wordCRUD.search();
@@ -33,7 +33,7 @@ public class WordManager {
                 wordCRUD.updateItem();
             } else if (menu == 6) {
                 //Delete
-                wordCRUD.deleteItem();
+                wordCRUD.delete();
             } else if (menu == 7) {
                 //Save
                 wordCRUD.saveFile();

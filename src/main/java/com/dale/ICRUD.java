@@ -5,7 +5,7 @@ public interface ICRUD {
 
     public int update(Object obj);
 
-    public int delete(Object obj);
+    public void delete();
 
     public void select(Object obj);
 }

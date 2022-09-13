@@ -25,6 +25,11 @@ public class WordModel {
         return coment;
     }
 
+    public String toFileString() {
+
+        return this.level + "|" + this.word + "|" + this.meaning;
+    }
+
     public int getNumber() {
         return number;
     }

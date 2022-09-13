@@ -1,9 +1,6 @@
 package com.dale;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -42,8 +39,24 @@ public class WordCRUD implements ICRUD {
     }
 
     @Override
-    public int delete(Object obj) {
-        return 0;
+    public void delete() {
+        System.out.print("=> 삭제할 단어 검색 : ");
+        String keyword = scanner.next();
+        ArrayList<Integer> idList = this.listAll(keyword);
+
+        System.out.print("=> 삭제할 번호 선택 : ");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print("=> 정말로 삭제하실래요? (Y/n) ");
+
+        String answer = scanner.next();
+        if (answer.equalsIgnoreCase("y")) {
+            list.remove((int) idList.get(id - 1));
+            System.out.println("단어가 삭제되었습니다.");
+        } else {
+            System.out.println("취소되었습니다.");
+        }
     }
 
     @Override
@@ -93,26 +106,20 @@ public class WordCRUD implements ICRUD {
         return idList;
     }
 
-    public void deleteItem() {
-        System.out.print("=> 삭제할 단어 검색 : ");
-        String keyword = scanner.next();
-        ArrayList<Integer> idList = this.listAll(keyword);
+    public void listAll(int level){
+        int j = 0;
 
-        System.out.print("=> 삭제할 번호 선택 : ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        System.out.println("--------------------------------");
+        for (int i = 0; i < list.size(); i++) {
+            int wordLevel = list.get(i).getLevel();
+            if (wordLevel == level) {
+                j++;
+                System.out.print((j) + " ");
+                System.out.println(list.get(i).toString());
 
-        System.out.print("=> 정말로 삭제하실래요? (Y/n) ");
-
-        String answer = scanner.next();
-        if (answer.equalsIgnoreCase("y")) {
-            list.remove((int) idList.get(id - 1));
-            System.out.println("단어가 삭제되었습니다.");
-        } else {
-            System.out.println("취소되었습니다.");
+            }
         }
-
-
+        System.out.println("--------------------------------");
     }
 
     public void search() {
@@ -139,9 +146,9 @@ public class WordCRUD implements ICRUD {
             String line;
             int count = 0;
 
-            while (true){
+            while (true) {
                 line = bufferedReader.readLine();
-                if(line == null) break;
+                if (line == null) break;
                 String[] data = line.split("\\|");
 
                 int level = Integer.parseInt(data[0]);
@@ -159,5 +166,23 @@ public class WordCRUD implements ICRUD {
     }
 
     public void saveFile() {
+        try {
+            PrintWriter printWriter = new PrintWriter(new FileWriter("test.txt"));
+
+            for (WordModel wordModel : list) {
+                printWriter.write(wordModel.toFileString() + "\n");
+            }
+
+            printWriter.close();
+            System.out.println("==> 데이터 저장 완료");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void searchByLevel() {
+        System.out.print("==> 원하는 레벨은? (1~3) ");
+        int level = scanner.nextInt();
+        listAll(level);
     }
 }
