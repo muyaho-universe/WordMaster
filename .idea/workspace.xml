@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Update delete function">
-      <change afterPath="$PROJECT_DIR$/Dictionary.txt" afterDir="false" />
+    <list default="true" id="ecf4e63b-d79d-46ee-9a99-8365d8d33a11" name="Changes" comment="Working on search method">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/dale/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dale/WordManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,6 +225,8 @@
     <MESSAGE value="Complete delete" />
     <MESSAGE value="Complete all" />
     <MESSAGE value="Update delete function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update delete function" />
+    <MESSAGE value="Update menu" />
+    <MESSAGE value="Working on search method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on search method" />
   </component>
 </project>
