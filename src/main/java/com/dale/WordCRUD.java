@@ -9,6 +9,7 @@ public class WordCRUD implements ICRUD {
     Scanner scanner;
 
     final private String FILENAME = "Dictionary.txt";
+    final private String SAVEFILENAME = "save.txt";
 
     public WordCRUD(Scanner scanner) {
         list = new ArrayList<>();
@@ -168,7 +169,7 @@ public class WordCRUD implements ICRUD {
 
     public void saveFile() {
         try {
-            PrintWriter printWriter = new PrintWriter(new FileWriter("test.txt"));
+            PrintWriter printWriter = new PrintWriter(new FileWriter(SAVEFILENAME));
 
             for (WordModel wordModel : list) {
                 printWriter.write(wordModel.toFileString() + "\n");
